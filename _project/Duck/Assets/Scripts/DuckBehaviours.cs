@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DuckBehaviours : MonoBehaviour
@@ -17,6 +18,8 @@ public class DuckBehaviours : MonoBehaviour
     // Duck function variables
     GameObject locoSphere; // Our sphere that we're using to move
     Rigidbody locoRb;
+
+    public bool jumping = false; // Stops our duck from being able to fly
 
     AudioSource audioSource;
 
@@ -73,6 +76,11 @@ public class DuckBehaviours : MonoBehaviour
         if (Input.GetAxis("Horizontal") != 0)
         {
             locoRb.AddForce(camTransform.right * Input.GetAxis("Horizontal") * acceleration);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && jumping == false)
+        {
+            locoRb.AddForce(transform.up * jumpStrength);
+            jumping = true;
         }
 
         // Duck body behaviours

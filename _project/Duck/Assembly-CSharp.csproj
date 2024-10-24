@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\DuckBehaviours.cs" />
     <Compile Include="Assets\Scripts\CameraBehaviours.cs" />
+    <Compile Include="Assets\Scripts\DuckSphereHelpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
