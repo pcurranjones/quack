@@ -32,7 +32,7 @@ public class DuckBehaviours : MonoBehaviour
 
     [Header("Sounds")]
     public AudioClip quack;
-    public AudioClip footsteps; // Unused as but I wanna get some "Plip Plap" sounds in
+    //public AudioClip footsteps;
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +50,7 @@ public class DuckBehaviours : MonoBehaviour
         camTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
         camSettings = camTransform.gameObject.GetComponent<Camera>();
 
-        audioSource = duckHead.GetComponent<AudioSource>();
+        audioSource = duckHead.AddComponent<AudioSource>();
 
     }
 

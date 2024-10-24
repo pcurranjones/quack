@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\duckbehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|c:\\users\\pshmo\\documents\\github\\quack\\_project\\duck\\assets\\scripts\\camerabehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\assets\\scripts\\camerabehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerabehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,8 +30,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CameraBehaviours.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:56:54.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T11:56:54.017Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\DuckBehaviours.cs",
               "ToolTip": "C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\Assets\\Scripts\\DuckBehaviours.cs",
               "RelativeToolTip": "Assets\\Scripts\\DuckBehaviours.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAlwE0AAAA6AAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAIA3wDgAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T10:34:28.3Z",
               "EditorCaption": ""

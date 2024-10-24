@@ -608,6 +608,22 @@ PrefabInstance:
       propertyPath: acceleration
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1875734303980652903, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
+      propertyPath: m_TranslationAtRest.y
+      value: 0.7860081
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875734303980652903, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
+      propertyPath: m_TranslationAtRest.z
+      value: 0.34021097
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875734303980652903, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
+      propertyPath: m_TranslationOffset.y
+      value: -0.0088377
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875734303980652903, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
+      propertyPath: m_TranslationOffset.z
+      value: 0.08521098
+      objectReference: {fileID: 0}
     - target: {fileID: 3830997872609711191, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -699,7 +715,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 509860303}
   - {fileID: 705507995}
   - {fileID: 5912660843220873892}
   - {fileID: 2074246943}
-  - {fileID: 509860303}
