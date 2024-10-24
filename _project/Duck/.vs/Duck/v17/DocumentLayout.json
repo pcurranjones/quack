@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\duckspherehelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\assets\\scripts\\duckbehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\duckbehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\assets\\scripts\\camerabehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerabehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\assets\\scripts\\duckbehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEF502C-6CC1-3143-CDB7-2464DE742743}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\duckbehaviours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,10 +28,10 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DuckSphereHelpers.cs",
-              "DocumentMoniker": "C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\Assets\\Scripts\\duckSphereHelpers.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\duckSphereHelpers.cs",
-              "ToolTip": "C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\Assets\\Scripts\\duckSphereHelpers.cs",
-              "RelativeToolTip": "Assets\\Scripts\\duckSphereHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\Assets\\Scripts\\DuckSphereHelpers.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DuckSphereHelpers.cs",
+              "ToolTip": "C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\Assets\\Scripts\\DuckSphereHelpers.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DuckSphereHelpers.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T13:54:03.24Z",
@@ -39,27 +39,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CameraBehaviours.cs",
               "DocumentMoniker": "C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\Assets\\Scripts\\CameraBehaviours.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraBehaviours.cs",
               "ToolTip": "C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\Assets\\Scripts\\CameraBehaviours.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraBehaviours.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA6AAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwB4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T11:56:54.017Z"
+              "WhenOpened": "2024-10-24T11:56:54.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DuckBehaviours.cs",
               "DocumentMoniker": "C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\Assets\\Scripts\\DuckBehaviours.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DuckBehaviours.cs",
               "ToolTip": "C:\\Users\\pshmo\\Documents\\GitHub\\quack\\_project\\Duck\\Assets\\Scripts\\DuckBehaviours.cs",
               "RelativeToolTip": "Assets\\Scripts\\DuckBehaviours.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABUAAAALAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAmwIUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:34:28.3Z"
+              "WhenOpened": "2024-10-24T10:34:28.3Z",
+              "EditorCaption": ""
             }
           ]
         }

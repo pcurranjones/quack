@@ -9,12 +9,13 @@ public class DuckBehaviours : MonoBehaviour
     // Set up our private variables
 
     // Duck body variables
-    public GameObject duckBody; // Our body that we're going to snap to the sphere
+   
+    GameObject duckBody; // Our body that we're going to snap to the sphere
     GameObject duckHead;
     LineRenderer neckLine; // The neck's made from a line that goes from the head joint to the body joint
     Transform[] neckJoints;
     LineRenderer[] quackLines;
-
+    
     // Duck function variables
     GameObject locoSphere; // Our sphere that we're using to move
     Rigidbody locoRb;
@@ -55,13 +56,14 @@ public class DuckBehaviours : MonoBehaviour
         camSettings = camTransform.gameObject.GetComponent<Camera>();
 
         audioSource = duckHead.AddComponent<AudioSource>();
-        foreach (LineRenderer t in FindObjectsOfType<LineRenderer>())
+        
+        /*foreach (LineRenderer t in FindObjectsOfType<LineRenderer>())
         {
             if (t.gameObject.name == "QuackLine")
             {
                 quackLines[quackLines.Length] = t;
             }
-        }
+        }*/
 
     }
 
@@ -101,10 +103,9 @@ public class DuckBehaviours : MonoBehaviour
         if(Input.GetMouseButtonDown(0)){
             
             // We want the quack to sound different each time
-            float pitchMod = (Random.Range(0.8f, 1.2f));
-            audioSource.pitch += pitchMod;
+            audioSource.pitch = Random.Range(0.8f, 1.2f);
             audioSource.PlayOneShot(quack);
-            audioSource.pitch = +pitchMod;
+
             // Show the lines
             foreach(LineRenderer line in quackLines)
             {

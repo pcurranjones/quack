@@ -9,9 +9,6 @@ public class CameraBehaviours : MonoBehaviour
     Transform camRig; // Our parent
     Camera cam;
 
-    [Header("How much the mouse position influences camera panning")]
-    public float camMouseFollow;
-
     // Start is called before the first frame update
     void Start()
     {
