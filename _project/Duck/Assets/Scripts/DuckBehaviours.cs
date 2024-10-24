@@ -8,10 +8,11 @@ public class DuckBehaviours : MonoBehaviour
     // Set up our private variables
 
     // Duck body variables
-    GameObject duckBody; // Our body that we're going to snap to the sphere
+    public GameObject duckBody; // Our body that we're going to snap to the sphere
     GameObject duckHead;
     LineRenderer neckLine; // The neck's made from a line that goes from the head joint to the body joint
     Transform[] neckJoints;
+    LineRenderer[] quackLines;
 
     // Duck function variables
     GameObject locoSphere; // Our sphere that we're using to move
@@ -20,7 +21,7 @@ public class DuckBehaviours : MonoBehaviour
     AudioSource audioSource;
 
     //Camera variables
-    Transform camTransform;
+    public Transform camTransform;
     Camera camSettings;
 
     Transform cursorPosition; // Where our 3D cursor is placed
@@ -46,11 +47,18 @@ public class DuckBehaviours : MonoBehaviour
         duckHead = transform.GetChild(2).gameObject;
 
         neckLine = new LineRenderer();
-
+     
         camTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
         camSettings = camTransform.gameObject.GetComponent<Camera>();
 
         audioSource = duckHead.AddComponent<AudioSource>();
+        foreach (LineRenderer t in FindObjectsOfType<LineRenderer>())
+        {
+            if (t.gameObject.name == "QuackLine")
+            {
+                quackLines[quackLines.Length] = t;
+            }
+        }
 
     }
 
@@ -89,7 +97,12 @@ public class DuckBehaviours : MonoBehaviour
             audioSource.pitch += pitchMod;
             audioSource.PlayOneShot(quack);
             audioSource.pitch = +pitchMod;
-
+            // Show the lines
+            foreach(LineRenderer line in quackLines)
+            {
+                line.enabled = true;
+            }
+            StartCoroutine("HideQuackLines");
         }
 
     }
@@ -99,6 +112,19 @@ public class DuckBehaviours : MonoBehaviour
     {
         // Camera behaviours
         // Add a velocity qualifier to this and a camera offset with a float attached to mouse screen position
-        camTransform.LookAt(duckBody.transform.position);
+        if (camTransform != null)
+        {
+            camTransform.LookAt(duckBody.transform.position);
+        }
+        else { camTransform = GameObject.FindGameObjectWithTag("MainCamera").transform; }
+    }
+
+    IEnumerator HideQuackLines()
+    {
+        yield return new WaitForSeconds (quack.length);
+        foreach (LineRenderer line in quackLines)
+        {
+            line.enabled = false;
+        }
     }
 }

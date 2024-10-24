@@ -21,13 +21,6 @@ public class CameraBehaviours : MonoBehaviour
     }
 
 
-    void FixedUpdate()
-    {
-        if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
-        {
-            transform.position = camRig.position + (Input.mousePosition * camMouseFollow);
-        }
-    }
 
     void Update()
     {
