@@ -6,15 +6,24 @@ public class DuckBehaviours : MonoBehaviour
 {
 
     // Set up our private variables
-    GameObject locoSphere; // Our sphere that we're using to move
-    Rigidbody locoRb;
+
+    // Duck body variables
     GameObject duckBody; // Our body that we're going to snap to the sphere
     GameObject duckHead;
     LineRenderer neckLine; // The neck's made from a line that goes from the head joint to the body joint
     Transform[] neckJoints;
+
+    // Duck function variables
+    GameObject locoSphere; // Our sphere that we're using to move
+    Rigidbody locoRb;
+
+    AudioSource audioSource;
+
+    //Camera variables
     Transform camTransform;
     Camera camSettings;
-    AudioSource audioSource;
+
+    Transform cursorPosition; // Where our 3D cursor is placed
 
     // Set up our public variables, we wanna be able to tweak these for different feels
     [Header("Duck Movement")]
@@ -23,7 +32,7 @@ public class DuckBehaviours : MonoBehaviour
 
     [Header("Sounds")]
     public AudioClip quack;
-    public AudioClip footsteps;
+    public AudioClip footsteps; // Unused as but I wanna get some "Plip Plap" sounds in
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +70,16 @@ public class DuckBehaviours : MonoBehaviour
         // Duck body behaviours
         duckBody.transform.position = locoSphere.transform.position;
         duckBody.transform.LookAt(locoRb.velocity * 1000);
+
+        if(Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
+        {
+            if (cursorPosition != null)
+            {
+                duckHead.transform.LookAt(cursorPosition);
+            }
+
+            else { cursorPosition = GameObject.Find("Cursor").transform; }
+        }
 
         // Quack!
         if(Input.GetMouseButtonDown(0)){
