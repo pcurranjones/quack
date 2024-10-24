@@ -150,7 +150,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -555,6 +555,18 @@ PrefabInstance:
     - target: {fileID: 4991842772600855338, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
       propertyPath: m_Name
       value: Duck
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200013809829022634, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
+      propertyPath: m_Active
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200013809829022634, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
+      propertyPath: m_TranslationOffset.z
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525315538527190973, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8869509514582964032, guid: de7b1376753b9c746bc1792add8ce078, type: 3}
       propertyPath: m_Enabled
